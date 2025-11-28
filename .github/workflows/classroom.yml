@@ -19,7 +19,7 @@ jobs:
       with:
         test-name: W3C HTML Validation
         setup-command: npm install html-w3c-validator
-        command: npx html-w3c-validator --file "*.html"
+        command: npx html-w3c-validator
         timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1

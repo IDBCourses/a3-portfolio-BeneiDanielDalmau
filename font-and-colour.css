@@ -16,3 +16,10 @@ nav a:focus-visible {
   text-decoration-line: underline;
   text-decoration-style: wavy;
 }
+
+.centered-text {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 510;
+  letter-spacing: 0.15rem;
+}

@@ -2,6 +2,7 @@ nav {
   padding-left: clamp(2rem, 10vw, 15rem);
   padding-right: clamp(2rem, 10vw, 15rem);
 }
+
 nav ul {
   list-style: none;
   justify-content: space-between;
@@ -9,4 +10,19 @@ nav ul {
   padding-left: 2rem;
   padding-right: 2rem;
   display: flex;
+}
+
+.centered-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.name {
+  text-align: right;
+}
+
+.desriptor {
+  text-align: left;
 }

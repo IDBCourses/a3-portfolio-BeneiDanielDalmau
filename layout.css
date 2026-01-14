@@ -1,7 +1,12 @@
 nav {
-  display: flex;
+  padding-left: clamp(2rem, 10vw, 15rem);
+  padding-right: clamp(2rem, 10vw, 15rem);
+}
+nav ul {
+  list-style: none;
   justify-content: space-between;
-  align-items: center;
-
-  padding: 1rem 2rem;
+  column-gap: 2rem; /*min gap between navbar links*/
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
 }

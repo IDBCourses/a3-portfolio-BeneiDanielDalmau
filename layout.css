@@ -1,3 +1,25 @@
+html * {
+  outline: 2px dotted rgb(240, 236, 236);
+}
+
+body {
+  margin: 0;
+}
+
+body div {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
 nav {
   padding-left: clamp(2rem, 10vw, 15rem);
   padding-right: clamp(2rem, 10vw, 15rem);
@@ -6,23 +28,32 @@ nav {
 nav ul {
   list-style: none;
   justify-content: space-between;
+  display: flex;
   column-gap: 2rem; /*min gap between navbar links*/
   padding-left: 2rem;
   padding-right: 2rem;
-  display: flex;
 }
 
 .centered-text {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 300px 2px 300px;
+  columns: 3;
+  gap: 10px;
   justify-content: center;
-  gap: 1rem;
+}
+
+.name & .descriptor {
+  justify-items: center;
 }
 
 .name {
+  display: grid;
+  align-items: center;
   text-align: right;
 }
 
-.desriptor {
+.descriptor {
+  display: grid;
+  align-items: center;
   text-align: left;
 }

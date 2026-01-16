@@ -29,18 +29,16 @@ nav ul {
 .centered-text {
   height: 85vh;
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 35% 35%;
   columns: 3;
   gap: 10px;
   justify-content: center;
 }
 
-.name & .descriptor {
-  justify-items: center;
-}
-
 .name {
   display: grid;
+  grid-template-columns: auto auto;
+  justify-self: right;
   align-items: center;
   text-align: right;
 }
@@ -49,6 +47,26 @@ nav ul {
   display: grid;
   align-items: center;
   text-align: left;
+}
+
+.about-me {
+  height: auto;
+  display: grid;
+  align-items: center;
+  text-align: left;
+  word-break: break-all;
+}
+
+.about-me h1 {
+  margin: 0;
+}
+
+.about-me p {
+  margin: 0;
+}
+
+.name img {
+  margin-left: 10px;
 }
 
 .projects-header {

@@ -37,11 +37,17 @@ nav a:focus-visible {
   margin: 0;
   font-size: 4rem;
   font-weight: 510;
-  letter-spacing: 0.15rem;
+}
+
+.about-me {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 510;
 }
 
 .name {
   color: var(--highlight-text-color);
+  letter-spacing: 0.15rem;
 }
 
 .vertical-line {

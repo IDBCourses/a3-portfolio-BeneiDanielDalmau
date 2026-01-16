@@ -65,4 +65,5 @@ footer a {
 footer a:hover {
   font-size: large;
   font-weight: bolder;
+  ++
 }

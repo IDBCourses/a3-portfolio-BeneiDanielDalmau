@@ -21,10 +21,6 @@ nav a {
   color: var(--primary-text-color);
 }
 
-.active {
-  text-transform: uppercase;
-}
-
 nav a:hover,
 nav a:focus-visible {
   color: var(--highlight-text-color);
@@ -60,4 +56,13 @@ h2 {
 
 .project p {
   font-size: 1.4rem;
+}
+
+footer a {
+  color: var(--highlight-text-color);
+}
+
+footer a:hover {
+  font-size: large;
+  font-weight: bolder;
 }

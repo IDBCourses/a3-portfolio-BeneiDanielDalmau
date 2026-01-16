@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  backdrop-filter: blur;
 }
 
 body div {
@@ -26,9 +27,9 @@ nav ul {
 }
 
 .centered-text {
-  height: 80vh;
+  height: 85vh;
   display: grid;
-  grid-template-columns: 300px 4px 300px;
+  grid-template-columns: 300px 300px;
   columns: 3;
   gap: 10px;
   justify-content: center;
@@ -50,17 +51,22 @@ nav ul {
   text-align: left;
 }
 
+.projects-header {
+  margin: 10% auto 5% auto;
+  text-align: center;
+}
+
 .projects-container {
   display: flex;
   flex-direction: column;
-  row-gap: 120px;
+  row-gap: 100px;
 }
 
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 12px;
-  padding: 0% 10%;
+  column-gap: 15px;
+  padding: 0% 20%;
 }
 
 .project-img {
@@ -69,8 +75,6 @@ nav ul {
 }
 
 .project-txt-even {
-  display: flex;
-  justify-content: flex-end;
   text-align: right;
 }
 
@@ -81,4 +85,12 @@ nav ul {
 
 img {
   border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+}
+
+hr {
+  margin: 10% 20% 5%;
 }

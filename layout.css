@@ -1,10 +1,5 @@
-/* html * {
-    outline: 2px dotted rgb(240, 236, 236);
-  } */
-
 body {
   margin: 0;
-  backdrop-filter: blur;
 }
 
 body div {
@@ -21,13 +16,13 @@ nav ul {
   list-style: none;
   justify-content: space-between;
   display: flex;
-  column-gap: 2rem; /*min gap between navbar links*/
+  column-gap: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 .centered-text {
-  height: 85vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: 35% 35%;
   columns: 3;
@@ -35,7 +30,7 @@ nav ul {
   justify-content: center;
 }
 
-.name {
+.left-container {
   display: grid;
   grid-template-columns: auto auto;
   justify-self: right;
@@ -65,12 +60,12 @@ nav ul {
   margin: 0;
 }
 
-.name img {
+#author-photo {
   margin-left: 10px;
 }
 
 .projects-header {
-  margin: 10% auto 5% auto;
+  margin: 2% auto 5% auto;
   text-align: center;
 }
 
@@ -90,6 +85,8 @@ nav ul {
 .project-img {
   display: flex;
   justify-content: flex-end;
+  max-width: 600px;
+  object-fit: contain;
 }
 
 .project-txt-even {
@@ -99,10 +96,13 @@ nav ul {
 .project-img-even {
   display: flex;
   justify-content: flex-start;
+  max-width: 550px;
+  object-fit: contain;
 }
 
 img {
   border-radius: 6px;
+  width: 100%;
 }
 
 footer {
@@ -111,4 +111,8 @@ footer {
 
 hr {
   margin: 10% 20% 5%;
+}
+
+.projects-header h1 {
+  padding-top: 1%;
 }

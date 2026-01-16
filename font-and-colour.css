@@ -33,6 +33,10 @@ nav a:focus-visible {
   text-underline-offset: 8px;
 }
 
+h2 {
+  color: var(--highlight-text-color);
+}
+
 .centered-text {
   margin: 0;
   font-size: 4rem;
@@ -45,11 +49,15 @@ nav a:focus-visible {
   font-weight: 510;
 }
 
-.name {
+.left-container {
   color: var(--highlight-text-color);
   letter-spacing: 0.15rem;
 }
 
 .vertical-line {
   background-color: white;
+}
+
+.project p {
+  font-size: 1.4rem;
 }

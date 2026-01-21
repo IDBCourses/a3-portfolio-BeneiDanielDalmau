@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 /*global color variables*/
 :root {
-  --primary-text-color: rgb(255, 243, 201);
-  --highlight-text-color: rgb(255, 208, 0);
+  --primary-text-color: rgb(255, 255, 255);
+  --highlight-text-color: rgb(255, 217, 0);
 }
 
 html {
   font-family: "Inria Sans";
+  background-image: url(images/Gemini_Generated_Image_page\ background1.png);
+  background-repeat: no-repeat;
+   background-size: cover, 100%;
 }
-
 body {
-  background-color: rgb(16, 5, 5);
+  /* background-color: rgb(16, 5, 5); */
   color: var(--primary-text-color);
 }
 

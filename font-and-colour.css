@@ -2,14 +2,14 @@
 /*global color variables*/
 :root {
   --primary-text-color: rgb(255, 255, 255);
-  --highlight-text-color: rgb(255, 217, 0);
+  --highlight-text-color: rgb(255, 225, 0);
 }
 
 html {
   font-family: "Inria Sans";
   background-image: url(images/Gemini_Generated_Image_page\ background1.png);
   background-repeat: no-repeat;
-   background-size: cover, 100%;
+  background-size: cover, 100%;
 }
 body {
   /* background-color: rgb(16, 5, 5); */
@@ -67,5 +67,4 @@ footer a {
 footer a:hover {
   font-size: large;
   font-weight: bolder;
-  ++
 }

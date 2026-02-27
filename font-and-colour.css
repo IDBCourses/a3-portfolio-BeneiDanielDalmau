@@ -31,6 +31,10 @@ nav a:focus-visible {
   text-underline-offset: 8px;
 }
 
+.thumbnails img.active {
+  outline: 2px solid var(--highlight-text-color);
+}
+
 h2 {
   color: var(--highlight-text-color);
 }
@@ -45,6 +49,7 @@ h2 {
   margin: 0;
   font-size: 1.4rem;
   font-weight: 510;
+  word-break: normal;
 }
 
 .left-container {
@@ -56,8 +61,34 @@ h2 {
   background-color: white;
 }
 
+.project-img a img,
+.project-img-even a img,
+.thumbnails img {
+  transition: transform 0.2s ease;
+}
+
+.project-img a:hover img,
+.project-img-even a:hover img {
+  transform: scale(1.03);
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+}
+
 .project p {
   font-size: 1.4rem;
+}
+
+.project-description {
+  font-size: 1.5rem;
+}
+
+.project-description p {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgb(0 0 0 /50%);
+  line-height: 1.5;
 }
 
 footer a {

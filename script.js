@@ -4,21 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelector(".slides");
   // const thumbnails = document.querySelectorAll(".thumbnails img");
 
-  console.log("slides found:", slides); //ctrl
-  console.log("slides scrollWidth:", slides.scrollWidth); //ctrl
-  console.log("slides clientWidth:", slides.clientWidth); //ctrl
-
-  slides.addEventListener(
-    "wheel",
-    (event) => {
-      //we are listening to scrolling when cursor on top of .slides
-      console.log("wheel fired", event.deltaY); //ctrl
-      event.preventDefault(); //stop default scrolling
-      slides.scrollBy({ left: event.deltaY, behavior: "smooth" }); //scrollLeft conflicts with scroll-snap-type: mandatory, so we switched to scrollBy to force horizontal scroll
-      console.log("scrollLeft is now:", slides.scrollLeft); //ctrl
-    },
-    { passive: false },
-  );
+  slides.addEventListener("wheel", (event) => {
+    //we are listening to scrolling when cursor on top of .slides
+    event.preventDefault(); //stop default scrolling
+    slides.scrollBy({ left: event.deltaY, behavior: "smooth" }); //scrollLeft conflicts with scroll-snap-type: mandatory, so we switched to scrollBy to force horizontal scroll
+  });
 
   slides.addEventListener("scroll", () => {
     //we are tracking scrolling here

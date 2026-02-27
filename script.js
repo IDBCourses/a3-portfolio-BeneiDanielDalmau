@@ -1,8 +1,8 @@
 //waiting for the DOM to fully load
 document.addEventListener("DOMContentLoaded", () => {
   // we grab what we need
-  const slides = document.querySelector(".slides");
-  // const thumbnails = document.querySelectorAll(".thumbnails img");
+  let slides = document.querySelector(".slides");
+  let thumbnails = document.querySelectorAll(".thumbnails img");
 
   slides.addEventListener("wheel", (event) => {
     //we are listening to scrolling when cursor on top of .slides
@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
         imagesArray.push(img);
       });
       let imageIndex = imagesArray.indexOf(centerImg);
-      console.log("current slide index:", imageIndex);
+      thumbnails.forEach((thumb, i) => {
+        thumb.classList.toggle("active", i === imageIndex);
+      });
     }
   });
 });

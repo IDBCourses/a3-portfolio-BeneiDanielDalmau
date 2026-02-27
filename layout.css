@@ -41,7 +41,7 @@ nav ul {
   grid-auto-flow: column;
   gap: 1rem;
   width: 1300px;
-  height: 655px;
+  height: 670px;
   padding: 0 0.25rem;
   overflow-x: auto;
   overflow-y: hidden;
@@ -73,7 +73,6 @@ nav ul {
   width: 60px;
   height: 60px;
   object-fit: cover;
-  cursor: pointer;
 }
 
 .scrollbar {
@@ -99,6 +98,10 @@ nav ul {
   text-align: right;
 }
 
+.about-page .left-container {
+  margin-right: 10px;
+}
+
 .descriptor {
   display: grid;
   align-items: center;
@@ -110,7 +113,6 @@ nav ul {
   display: grid;
   align-items: center;
   text-align: left;
-  word-break: break-all;
 }
 
 .about-me h1 {

@@ -62,8 +62,7 @@ h2 {
 }
 
 .project-img a img,
-.project-img-even a img,
-.thumbnails img {
+.project-img-even a img {
   transition: transform 0.2s ease;
 }
 

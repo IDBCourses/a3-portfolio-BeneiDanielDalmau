@@ -1,5 +1,5 @@
 html {
-  overscroll-behavior: none;
+  overscroll-behavior: auto;
 }
 
 body {
@@ -39,64 +39,12 @@ nav ul {
 }
 
 .container-galery {
+  display: flex;
+  flex-direction: column;
   position: relative;
-  display: flex;
   justify-content: center;
-  gap: 1rem;
-}
-
-.slides {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1rem;
-  width: 1300px;
-  height: 670px;
-  padding: 0 0.25rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-}
-
-.slides::-webkit-scrollbar {
-  display: none;
-}
-
-.slides img {
-  scroll-snap-align: start;
-  scroll-margin-left: 54px;
-  width: 1200px;
-  flex-shrink: 0;
-  object-fit: contain;
-}
-
-.thumbnails {
-  justify-content: center;
-  margin: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.thumbnails img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-}
-
-.scrollbar {
-  width: 720px;
-  height: 1px;
-  background: #ccc;
-  display: block;
-  margin-top: 8px;
-}
-
-.thumb {
-  height: 1px;
-  position: absolute;
-  width: 0;
-  background: #000;
+  padding: 2rem 20rem;
+  gap: 2rem;
 }
 
 .left-container {

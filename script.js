@@ -6,8 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   slides.addEventListener("wheel", (event) => {
     //we are listening to scrolling when cursor on top of .slides
+    if (event.deltaX !== 0) return; //ignoring horizontal input while over galery caroussel
     event.preventDefault(); //stop default scrolling
-    slides.scrollBy({ left: event.deltaY, behavior: "smooth" }); //scrollLeft conflicts with scroll-snap-type: mandatory, so we switched to scrollBy to force horizontal scroll
+    slides.scrollBy({ left: event.deltaY * 0.1, behavior: "smooth" }); //scrollLeft conflicts with scroll-snap-type: mandatory, so we switched to scrollBy to force horizontal scroll
+    console.log("Y:", event.deltaY);
+    console.log("X:", event.deltaX);
   });
 
   slides.addEventListener("scroll", () => {

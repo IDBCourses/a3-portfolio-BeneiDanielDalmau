@@ -28,9 +28,14 @@ nav ul {
   height: 90vh;
   display: grid;
   grid-template-columns: 35% 35%;
-  columns: 3;
-  gap: 20px;
+  gap: clamp(0.6rem, 1.2vw, 1.2rem);
   justify-content: center;
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4rem);
+}
+
+.about-page.centered-text {
+  height: 100vh;
 }
 
 .container-galery {
@@ -114,9 +119,12 @@ nav ul {
 
 .about-me {
   height: auto;
+  max-width: 45ch;
   display: grid;
   align-items: center;
   text-align: left;
+  margin: 0;
+  font-size: clamp(0.7rem, 1.4vw, 1.4rem);
 }
 
 .about-me h1 {
@@ -132,6 +140,7 @@ nav ul {
 }
 
 #author-photo {
+  width: 6em;
   margin-left: 10px;
 }
 

@@ -40,14 +40,10 @@ h2 {
 }
 
 .centered-text {
-  margin: 0;
-  font-size: 4rem;
   font-weight: 510;
 }
 
 .about-me {
-  margin: 0;
-  font-size: 1.4rem;
   font-weight: 510;
   word-break: normal;
 }
